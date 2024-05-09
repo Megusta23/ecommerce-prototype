@@ -1,8 +1,8 @@
-import { Button } from "./components/ui/button";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,6 +12,8 @@ const App = () => {
       <Routes>
         <Route index element={<Home />} />
       </Routes>
+
+      <Footer />
     </>
   );
 };
