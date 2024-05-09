@@ -1,10 +1,19 @@
 import { Button } from "./components/ui/button";
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 const App = () => {
   return (
-    <div>
-      <Button>Click me</Button>
-    </div>
+    <>
+      <Navbar />
+      <div className="mx-16">
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
+      </div>
+    </>
   );
 };
 
