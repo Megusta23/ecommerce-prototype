@@ -8,11 +8,10 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="mx-16">
-        <Routes>
-          <Route index element={<Home />} />
-        </Routes>
-      </div>
+
+      <Routes>
+        <Route index element={<Home />} />
+      </Routes>
     </>
   );
 };
